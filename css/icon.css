@@ -1,0 +1,40 @@
+.arrow {
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  background: url(../icons/row.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+ul > li:hover > a i {
+  background: url(../icons/row-white.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .arrow {
+    padding-inline-start: 0.25rem;
+    inline-size: 0.9rem;
+    block-size: 0.9rem;
+    background: url(../icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    background-size: contain;
+  }
+
+  ul li:hover > a i {
+    background: url(../icons/row-down-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+  }
+
+  .navbar-secundario li:hover > a {
+    background: var(--black);
+    color: var(--white);
+  }
+}

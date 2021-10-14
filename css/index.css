@@ -1,0 +1,15 @@
+@import "./navbar.css";
+@import "./icon.css";
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #2f80ed;
+  --body1-bold: 700 1rem/1.25rem Inter;
+  --body1-regular: 400 0.875rem/1.25rem Inter;
+}
+
+body {
+  color: var(--black);
+  font: var(--body1-regular);
+  background-color: var(--blue);
+}

@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  inline-size: 100%;
+}
+
+.navbar-principal {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  inline-size: 100%;
+}
+
+.navbar-principal li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  text-decoration: none;
+  color: var(--black);
+  font: var(--body1-bold);
+  text-align: center;
+  padding-block: 0.75rem;
+}
+
+.navbar-principal li a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.navbar-principal li ul {
+  display: none;
+}
+
+.navbar-principal li:hover .container > ul,
+.container li:hover > ul {
+  display: flex;
+}
+
+.navbar-principa > li:hover > a {
+  background: var(--black);
+  color: var(--white);
+}
+
+.navbar-secundario {
+  padding: 0;
+  border: 0.25rem solid var(--black);
+  background: var(--white);
+  list-style: none;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  inline-size: 100%;
+}
+
+.navbar-secundario li a {
+  justify-content: flex-start;
+  padding-inline-start: 1.5rem;
+  font: var(--body1-regula);
+}
+
+.navbar-secundario li a:hover {
+  background: var(--black);
+  color: var(--white);
+}
+
+.navbar-secundario.border {
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-principal {
+    margin: auto;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 10rem;
+  }
+
+  .navbar-principal li a {
+    padding: 0.75rem;
+  }
+
+  .navbar-secundario {
+    position: absolute;
+    max-width: 10rem;
+  }
+
+  .navbar-secundario li {
+    position: relative;
+    max-width: 10rem;
+  }
+
+  .navbar-secundario.border {
+    border: 0.25rem solid var(--black);
+    position: absolute;
+    top: 0;
+    left: 10rem;
+  }
+
+  .nav-li {
+    transform: translateY(0.5rem);
+  }
+
+  .container {
+    padding-block-start: 1rem;
+  }
+
+  ul > li:hover > a {
+    color: var(--white);
+    background: var(--black);
+  }
+}
